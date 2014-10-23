@@ -1,0 +1,7 @@
+<suite name="Utils Test Suite" >
+  <test name="Framework Utils Test">
+    <packages>
+      <package name="framework.utils.tests"/>
+    </packages>
+  </test>
+</suite>

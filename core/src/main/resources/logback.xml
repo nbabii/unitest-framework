@@ -1,0 +1,46 @@
+<configuration>
+
+	<contextName>proferi</contextName>
+	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%d{HH:mm:ss.SSS} %X{srcip} [%thread] %-5level %logger{50} - %msg%n%ex{25}</Pattern>
+			<!--<Pattern>%d{ISO8601} %-5level %C{1} [%M:%L] [%thread] - %msg%n</Pattern> -->
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<appender name="SiftingFile" class="ch.qos.logback.classic.sift.SiftingAppender">
+		<discriminator>
+			<Key>testMethodName</Key>
+			<DefaultValue>other-suite-logs</DefaultValue>
+		</discriminator>
+		<sift>
+			<appender name="FILE-${testMethodName}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<File>target/test-logs/${logTestFolder}/${testMethodName}.log</File>
+				<rollingPolicy
+					class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+					<FileNamePattern>${testMethodName}.%i.log</FileNamePattern>
+					<MinIndex>1</MinIndex>
+					<MaxIndex>100</MaxIndex>
+				</rollingPolicy>
+				<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+					<MaxFileSize>5MB</MaxFileSize>
+				</triggeringPolicy>
+				<layout class="ch.qos.logback.classic.PatternLayout">
+					<Pattern>%d{HH:mm:ss.SSS} %X{srcip} [%thread] %-5level %logger{50} - %msg%n%ex{25}</Pattern>
+					<!--<Pattern>%d{ISO8601} %-5level %C{1} [%M:%L] [%thread] - %msg%n</Pattern> -->
+					<charset>UTF-8</charset>
+				</layout>
+			</appender>
+		</sift>
+	</appender>
+
+	<logger name="framework.utils" level="debug" />
+
+	<root level="info">
+		<appender-ref ref="Console" />
+		<appender-ref ref="SiftingFile" />
+		<appender-ref ref="FILE-${testMethodName}" />
+	</root>
+
+</configuration>

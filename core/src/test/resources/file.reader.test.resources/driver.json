@@ -1,0 +1,21 @@
+[
+{
+		"id" : "1",
+		"name" : "Taras",
+		"age" : "16",
+		"car" : {
+			"name" : "Peugeout",
+			"age" : "1"
+		}
+	},
+	{
+		"id" : "2",
+		"name" : "Taaaaas",
+		"second name" : "Lyyyttt",
+		"age" : "17",
+		"car" : {
+			"name" : "Peugeout1111",
+			"age" : "12"
+		}
+	}
+]
