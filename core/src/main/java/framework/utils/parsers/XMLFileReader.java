@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 import com.thoughtworks.xstream.XStream;
 
-import framework.dto.IFrameworkDTO;
+import framework.utils.dto.IFrameworkDTO;
 
 public class XMLFileReader extends FileReader {
 	private Document document;

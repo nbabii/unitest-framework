@@ -1,6 +1,6 @@
 package framework.utils.tests.dto.parsers.csv;
 
-import framework.dto.IFrameworkDTO;
+import framework.utils.dto.IFrameworkDTO;
 
 @SuppressWarnings("serial")
 public class Employee implements IFrameworkDTO{

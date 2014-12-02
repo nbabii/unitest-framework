@@ -7,7 +7,7 @@ import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Headers;
 import com.jayway.restassured.response.Response;
 
-import framework.dto.IFrameworkDTO;
+import framework.utils.dto.IFrameworkDTO;
 import framework.utils.parsers.JsonFileReader;
 import framework.utils.parsers.XMLFileReader;
 

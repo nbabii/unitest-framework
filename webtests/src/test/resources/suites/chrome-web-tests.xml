@@ -1,0 +1,11 @@
+<suite name="Chrome Web Demo Test Suite 1">
+    <parameter name="testType" value="browser"/>
+    <parameter name="browserName" value="chrome"/>	
+    <parameter name="proxyEnabled" value="false"/>
+	<test name="Chrome Web Demo Test 2">	
+		<classes>
+		    <class name="webtests.demotest.WebDriverDemoTest"/>
+		</classes>
+		
+	</test>
+</suite>

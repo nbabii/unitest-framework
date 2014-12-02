@@ -3,7 +3,7 @@ package framework.utils.database;
 import java.util.List;
 import java.util.Map;
 
-import framework.dto.IFrameworkDTO;
+import framework.utils.dto.IFrameworkDTO;
 
 public interface IDatabaseDao {
 

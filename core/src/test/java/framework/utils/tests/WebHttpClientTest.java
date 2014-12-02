@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import framework.test.TestBase;
+import framework.automation.setuptest.TestBase;
 import framework.utils.httpclient.HttpClient;
 import framework.utils.httpclient.HttpResponseHandler;
 import framework.utils.log.FrameworkLogger;
@@ -18,15 +18,16 @@ import framework.utils.tests.dto.httpclient.Elevation;
 import framework.utils.tests.dto.httpclient.Location;
 import framework.utils.tests.dto.httpclient.Result;
 
-public class WebHttpClientTest extends TestBase{
-	
-	private static final FrameworkLogger LOG = LogFactory.getLogger(WebHttpClientTest.class); 
+public class WebHttpClientTest extends TestBase {
+
+	private static final FrameworkLogger LOG = LogFactory
+			.getLogger(WebHttpClientTest.class);
 
 	HttpClient httpClient1;
 	HttpClient httpClient2;
 
-	@BeforeClass(dependsOnMethods = {"setupTestBase"})
-	public void setup() throws Exception {
+	@BeforeClass(dependsOnMethods = { "setupTestBase" })
+	public void setupHttpClientTests() throws Exception {
 		LOG.info("Before Suite");
 		httpClient1 = new HttpClient("https://maps.googleapis.com",
 				"/maps/api/elevation");
@@ -34,8 +35,8 @@ public class WebHttpClientTest extends TestBase{
 		httpClient2 = new HttpClient("https://maps.googleapis.com", "/maps");
 	}
 
-	@AfterClass(dependsOnMethods = {"tearDownTestBase"})
-	public void tearDown() throws Exception {
+	@AfterClass(dependsOnMethods = { "tearDownTestBase" })
+	public void tearDownHttpClientTests() {
 		LOG.info("After Suite");
 		httpClient1.resetClientProps();
 		httpClient2.resetClientProps();

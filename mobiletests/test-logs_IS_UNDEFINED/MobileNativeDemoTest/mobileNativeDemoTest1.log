@@ -1,0 +1,37 @@
+18:22:19.496  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileNativeDemoTest1
+18:22:19.499  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+18:22:20.111  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+18:25:24.899  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileNativeDemoTest1
+18:25:24.902  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+18:25:25.501  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+18:26:56.887  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileNativeDemoTest1
+18:26:56.890  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+18:26:57.503  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+18:27:13.291  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+18:27:13.292  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+18:27:13.322  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:13.337  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:18.249  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:18.249  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 73170
+18:27:22.465  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:22.465  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128634
+18:27:22.466  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:22.467  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:28.720  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:28.721  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128620
+18:27:39.496  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:39.496  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 138788
+18:27:43.711  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:43.711  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 53863
+18:27:49.658  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:27:49.658  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 44490
+18:27:51.927  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:51.928  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:27:53.578  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+18:27:54.752  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileNativeDemoTest1
+18:39:40.580  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileNativeDemoTest1
+18:39:40.583  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+18:39:41.186  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+18:42:07.702  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileNativeDemoTest1
+18:42:07.705  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+18:42:08.301  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util

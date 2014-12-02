@@ -1,0 +1,11 @@
+<suite name="Firefox Web Demo Test Suite">
+    <parameter name="testType" value="browser"/>
+    <parameter name="browserName" value="firefox"/>	
+    <parameter name="proxyEnabled" value="false"/>	
+	<test name="Framework Web Demo Test">
+		<classes>
+		    <class name="webtests.demotest.WebDriverDemoTest"/>
+		</classes>
+		
+	</test>
+</suite>

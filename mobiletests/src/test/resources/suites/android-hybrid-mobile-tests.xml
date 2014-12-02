@@ -1,0 +1,11 @@
+<suite name="Mobile Hybrid app Demo Test Suite 1">
+    <parameter name="testType" value="mobile"/>
+    <parameter name="osType" value="android"/>	
+    <parameter name="appType" value="hybrid"/>
+    <parameter name="mobileDeviceName" value="4d0060f2b0226077"/>
+	<test name="Mobile Hybrid Demo Test 1">	
+		<classes>
+		    <class name="mobiletests.demotest.MobileHybridDemoTest"/>
+		</classes>	
+	</test>
+</suite>

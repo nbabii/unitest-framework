@@ -1,0 +1,145 @@
+14:01:19.454  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+14:01:19.458  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+14:01:20.194  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+14:01:37.253  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+14:01:37.253  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+14:01:37.322  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+14:01:37.347  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+14:01:40.609  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+14:01:40.610  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 54801
+14:01:43.598  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screenshot path for test: mobileDemoTest1 is: target/test-logs/MobileNativeDemoTest/Screenshots for test failures/mobileDemoTest1_28_11_2014_02_01_43_at_MobileScreen_on_android.png
+14:01:43.940  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Successfully wrote MobileScreen screenshot to D:\WorkspaceEclipse\framework.automation\mobiletests\target\test-logs\MobileNativeDemoTest\Screenshots for test failures\mobileDemoTest1_28_11_2014_02_01_43_at_MobileScreen_on_android.png
+14:01:44.246  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+14:01:44.246  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 54801
+14:01:44.252  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+14:01:45.177  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+14:05:01.774  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+14:05:01.778  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+14:05:02.721  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+14:05:18.708  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+14:05:18.708  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+14:05:18.754  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+14:05:18.773  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+14:05:24.192  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+14:05:24.193  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 75889
+14:05:28.096  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+14:05:28.097  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128405
+14:05:28.165  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+14:05:29.056  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+14:59:56.198  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+14:59:56.202  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+14:59:56.891  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+15:00:26.330  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+15:00:26.331  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+15:00:26.367  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:00:26.385  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:00:31.602  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:00:31.603  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 80583
+15:00:35.653  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:00:35.653  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128500
+15:00:35.654  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:00:35.655  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:00:42.069  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:00:42.069  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128493
+15:00:51.414  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:00:51.414  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 150148
+15:00:54.515  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screenshot path for test: mobileDemoTest1 is: target/test-logs/MobileNativeDemoTest/Screenshots for test failures/mobileDemoTest1_28_11_2014_03_00_54_at_MobileScreen_on_android.png
+15:00:54.905  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Successfully wrote MobileScreen screenshot to D:\WorkspaceEclipse\framework.automation\mobiletests\target\test-logs\MobileNativeDemoTest\Screenshots for test failures\mobileDemoTest1_28_11_2014_03_00_54_at_MobileScreen_on_android.png
+15:00:55.292  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:00:55.293  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 150163
+15:00:55.297  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+15:00:56.123  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+15:03:37.108  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+15:03:37.111  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+15:03:37.834  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+15:03:53.326  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+15:03:53.327  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+15:03:53.359  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:03:53.392  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:04:06.313  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:04:06.314  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 88889
+15:04:10.482  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:04:10.483  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128634
+15:04:10.484  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:04:10.485  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:04:16.687  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:04:16.688  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128620
+15:04:25.763  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:04:25.764  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 138814
+15:04:28.676  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screenshot path for test: mobileDemoTest1 is: target/test-logs/MobileNativeDemoTest/Screenshots for test failures/mobileDemoTest1_28_11_2014_03_04_28_at_MobileScreen_on_android.png
+15:04:29.048  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Successfully wrote MobileScreen screenshot to D:\WorkspaceEclipse\framework.automation\mobiletests\target\test-logs\MobileNativeDemoTest\Screenshots for test failures\mobileDemoTest1_28_11_2014_03_04_28_at_MobileScreen_on_android.png
+15:04:29.435  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:04:29.436  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 138814
+15:04:29.441  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+15:04:30.346  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+15:06:59.395  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+15:06:59.399  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+15:07:00.100  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+15:07:14.006  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+15:07:14.006  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+15:07:14.037  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:07:14.053  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:07:18.931  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:18.931  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 93776
+15:07:23.169  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:23.170  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128917
+15:07:23.171  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:07:23.172  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:07:29.368  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:29.368  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 128904
+15:07:38.722  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:38.723  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 139176
+15:07:42.808  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:42.809  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 54037
+15:07:48.698  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:07:48.699  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 45031
+15:07:51.020  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+15:07:51.749  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+15:08:06.566  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+15:08:06.569  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+15:08:07.291  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+15:08:20.469  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+15:08:20.469  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+15:08:20.503  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:08:20.526  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:08:26.462  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:26.463  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 95279
+15:08:30.340  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:30.341  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 129117
+15:08:30.342  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:08:30.343  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:08:36.530  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:36.531  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 129103
+15:08:45.725  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:45.726  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 139413
+15:08:50.272  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:50.272  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 54297
+15:08:56.154  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:08:56.154  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 45078
+15:08:58.453  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+15:08:59.137  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1
+15:29:13.414  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileDemoTest1
+15:29:13.420  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - Before Test MobileDriver Demo precondtion
+15:29:14.274  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+15:29:34.117  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initializing MobileDriver listener
+15:29:34.118  [main] INFO  f.utils.listeners.NativeMobileDriverListener - Initialized MobileDriver listener
+15:29:34.157  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:29:34.174  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:29:49.918  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:29:49.918  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 80537
+15:29:53.926  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:29:53.926  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 129358
+15:29:53.927  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:29:53.929  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:30:00.161  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:30:00.162  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 129344
+15:30:09.325  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:30:09.326  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 139711
+15:30:13.417  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:30:13.417  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 54421
+15:30:19.545  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+15:30:19.546  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 45511
+15:30:21.715  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:30:21.716  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+15:30:23.519  [main] INFO  mobiletests.demotest.MobileNativeDemoTest - After Test MobileDriver Demo killing driver
+15:30:24.625  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileDemoTest1

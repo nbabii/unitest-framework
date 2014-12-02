@@ -3,7 +3,7 @@ package framework.utils.tests.dto.database;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import framework.dto.IFrameworkDTO;
+import framework.utils.dto.IFrameworkDTO;
 
 @SuppressWarnings("serial")
 @Entity

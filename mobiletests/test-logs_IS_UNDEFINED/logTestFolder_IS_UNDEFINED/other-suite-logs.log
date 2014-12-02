@@ -1,0 +1,140 @@
+14:01:19.164  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+14:01:19.219  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+14:01:19.219  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+14:01:19.221  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+14:01:19.221  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+14:01:19.221  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+14:01:19.221  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+14:05:01.506  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+14:05:01.599  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+14:05:01.600  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+14:05:01.601  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+14:05:01.601  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+14:05:01.601  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+14:05:01.601  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+14:59:55.942  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+14:59:56.011  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+14:59:56.011  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+14:59:56.013  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+14:59:56.013  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+14:59:56.014  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+14:59:56.014  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+15:03:36.881  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+15:03:36.939  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+15:03:36.939  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+15:03:36.941  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+15:03:36.941  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+15:03:36.942  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+15:03:36.942  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+15:06:59.169  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+15:06:59.225  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+15:06:59.226  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+15:06:59.228  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+15:06:59.228  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+15:06:59.228  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+15:06:59.228  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+15:08:06.331  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+15:08:06.384  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+15:08:06.384  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+15:08:06.385  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+15:08:06.385  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+15:08:06.386  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+15:08:06.386  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+15:29:13.126  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+15:29:13.188  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+15:29:13.188  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+15:29:13.190  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+15:29:13.190  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+15:29:13.190  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+15:29:13.191  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:19:17.434  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:19:17.491  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:19:17.492  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:19:17.494  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:19:17.494  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:19:17.494  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:19:17.494  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:20:21.692  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:20:21.732  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:20:21.732  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:20:21.734  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:20:21.734  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:20:21.734  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:20:21.734  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:22:19.292  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:22:19.335  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:22:19.335  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:22:19.337  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:22:19.337  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:22:19.337  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:22:19.337  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:25:24.711  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:25:24.754  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:25:24.754  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:25:24.756  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:25:24.756  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:25:24.756  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:25:24.756  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:26:56.700  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:26:56.745  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:26:56.746  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:26:56.747  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:26:56.747  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:26:56.748  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:26:56.748  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:39:02.739  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:39:02.781  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:39:02.782  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:39:02.783  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:39:02.783  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:39:02.783  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:39:02.783  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:39:40.398  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:39:40.436  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:39:40.437  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:39:40.438  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:39:40.438  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:39:40.438  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:39:40.438  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:42:07.507  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:42:07.548  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:42:07.548  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:42:07.549  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:42:07.549  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:42:07.550  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:42:07.550  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:42:44.895  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:42:44.936  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:42:44.936  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:42:44.937  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:42:44.938  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:42:44.938  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:42:44.938  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:46:37.591  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:46:37.634  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:46:37.634  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:46:37.635  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:46:37.635  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:46:37.635  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:46:37.635  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:47:04.569  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:47:04.612  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:47:04.613  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:47:04.614  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:47:04.615  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:47:04.615  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:47:04.615  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:47:56.653  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:47:56.700  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:47:56.700  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:47:56.702  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:47:56.702  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:47:56.702  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:47:56.703  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs
+18:49:10.972  [main] INFO  framework.utils.log.LogFactory - -------------------------Initializing logger-------------------------
+18:49:11.021  [main] INFO  framework.utils.log.LogFactory - Logging (re-)initalized
+18:49:11.021  [main] INFO  framework.utils.log.LogFactory - JVM timezone: Europe/Helsinki
+18:49:11.024  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Initialized Screenshot Failure Test Listener.
+18:49:11.024  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots that will be created on test failures are desktop and web browser and mobile screen screenshots.
+18:49:11.024  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screehshots extension is: .png
+18:49:11.024  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Test log path is: target/test-logs

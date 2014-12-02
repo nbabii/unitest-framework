@@ -3,50 +3,172 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
+	<artifactId>core</artifactId>
+	<packaging>jar</packaging>
+	<name>Eleks automation framework core</name>
+	<description>automation framework core</description>
+
 	<parent>
 		<groupId>eleks.automation</groupId>
 		<artifactId>framework.automation</artifactId>
 		<version>0.0.1</version>
 	</parent>
 
-	<artifactId>core</artifactId>
-	<packaging>jar</packaging>
-	<name>framework core</name>
-	<description>automation framework core</description>
-
+	<developers>
+		<developer>
+			<id>tlytvyn</id>
+			<name>Taras Lytvyn</name>
+			<email>Taras.Lytvyn@eleks.com</email>
+			<organization>Eleks</organization>
+		</developer>
+	</developers>
+	
 	<properties>
-		<test-resources-folder>src/test/resources</test-resources-folder>
-		<test-suites-folder>${test-resources-folder}/suites</test-suites-folder>
-		<other-log-folder-name>!!!other-logs</other-log-folder-name>
-	</properties>
+		<!-- version properties for plugins -->
+		<surefire.plugin.version>2.17</surefire.plugin.version>
+		<source.plugin.version>2.2.1</source.plugin.version>
+		<resources.plugin.version>2.7</resources.plugin.version>
+		<jar.plugin.version>2.5</jar.plugin.version>
+		<exec.plugin.version>1.3.2</exec.plugin.version>
+		
+		<!-- version properties for dependencies -->
+		<!-- Reporting tools -->
+		<testng.version>6.8</testng.version>
+		<reportng.version>1.1.4</reportng.version>
+		<guice.version>4.0-beta5</guice.version>
+		<velocity.version>1.5-beta2</velocity.version>
+		<ashot.version>1.3</ashot.version>
+		
+		<!-- apache common -->
+		<commons-io.version>2.4</commons-io.version>
+		
+		<!-- Matchers -->
+		<hamcrest.version>1.3</hamcrest.version>
+		
+		<!-- Logger -->
+		<logback.version>1.1.2</logback.version>
+		<slf4j.version>1.7.7</slf4j.version>
+		
+		<!-- Selenium webdriver -->
+		<webdriver.version>2.44.0</webdriver.version>
+		
+		<!-- proxy browser mob -->
+		<browsermob-proxy.version>2.0-beta-9</browsermob-proxy.version>
+		
+		<!-- Appium mobile -->
+		<appium.version>2.1.0</appium.version>
+		
+		<!-- Utils -->
+		<!-- csv parser -->
+		<opencsv.version>2.3</opencsv.version>
+		<!-- json parser -->
+		<jackson.version>2.4.2</jackson.version>
+		<!-- xstream & xml -->
+		<xstream.version>1.4.7</xstream.version>
+		<!-- data bases -->
+		<mysql.connector.version>5.1.33</mysql.connector.version>
+		<bonecp.version>0.8.0.RELEASE</bonecp.version>
+		<persistence.version>1.0.2</persistence.version>
+		<!-- rest impl. -->
+		<rest-assured.version>2.3.4</rest-assured.version>
+		<scribe.version>1.3.5</scribe.version>
+		
+		<!-- Image recognition & opencv-->
+		<sikuli-api.version>1.2.0</sikuli-api.version>
+		<javacpp.version>2.4.9-0.9</javacpp.version>
+		<spring.version>4.1.1.RELEASE</spring.version>
+	</properties>		
+
+	<!-- repo for java cv for image recognition -->
+	<repositories>
+		<repository>
+			<id>javacv</id>
+			<name>JavaCV</name>
+			<url>http://maven2.javacv.googlecode.com/git/</url>
+			<releases>
+				<checksumPolicy>ignore</checksumPolicy>
+			</releases>
+			<snapshots>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.17</version>
+				<version>${surefire.plugin.version}</version>
 				<configuration>
+					<skip>false</skip>
 					<suiteXmlFiles>
 						<suiteXmlFile>${test-suites-folder}/utils-tests.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<argLine>
+						-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+					</argLine>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+							<name>listener</name>
+							<value>
+								${test.listeners}
+							</value>
+						</property>
+					</properties>
+					<workingDirectory>.</workingDirectory>
 					<environmentVariables>
-							<logTestFolder>${other-log-folder-name}</logTestFolder>
+						<logTestFolder>${other-log-folder-name}</logTestFolder>
 					</environmentVariables>
+					<systemProperties>
+						<property>
+							<name>test-logs</name>
+							<value>target/test-logs</value>
+						</property>
+						<property>
+							<name>allure.results.directory</name>
+							<value>${allure.results.directory}</value>
+						</property>
+						<property>
+							<name>xml-report-folder</name>
+							<value>target/xml-test-report</value>
+						</property>
+						<property>
+							<name>environment.configuration</name>
+							<value>src/main/resources/environment.properties</value>
+						</property>
+					</systemProperties>
 				</configuration>
+
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${source.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
+				<version>${resources.plugin.version}</version>
 				<executions>
 					<execution>
 						<phase>initialize</phase>
@@ -59,7 +181,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.5</version>
+				<version>${jar.plugin.version}</version>
 				<executions>
 					<execution>
 						<goals>
@@ -68,11 +190,10 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.3.2</version>
+				<version>${exec.plugin.version}</version>
 				<executions>
 					<execution>
 						<goals>
@@ -91,108 +212,260 @@
 			</resource>
 		</resources>
 	</build>
+	
+	<reporting>
+		<excludeDefaults>true</excludeDefaults>
+		<plugins>
+			<plugin>
+				<groupId>ru.yandex.qatools.allure</groupId>
+				<artifactId>allure-maven-plugin</artifactId>
+				<version>${allure.plugin.version}</version>
+				<configuration>
+					<resultsPattern>target\xml-test-report</resultsPattern>
+					<outputDirectory>target\graph-test-report</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 
 	<dependencies>
+		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.8</version>
+			<version>${testng.version}</version>
 		</dependency>
+		
+		<!-- Reporting tools -->
+		<dependency>
+			<groupId>ru.yandex.qatools.allure</groupId>
+			<artifactId>allure-testng-adaptor</artifactId>
+			<version>${allure.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>${reportng.version}</version>
+			<scope>runtime</scope>
+			<exclusions>
+				<!-- transitive exclude here because of dependency on SNAPSHOT releases -->
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity-dep</artifactId>
+			<version>${velocity.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>${ashot.version}</version>
+		</dependency>
+		
+		<!-- apache common -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+		
+		<!-- Matchers -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>${hamcrest.version}</version>
+		</dependency>
+		
+		<!-- Logger -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
-			<version>1.1.2</version>
+			<version>${logback.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.1.2</version>
+			<version>${logback.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.7</version>
+			<version>${slf4j.version}</version>
 		</dependency>
+		
+		<!-- Selenium webdriver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.43.1</version>
+			<version>${webdriver.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-api</artifactId>
-			<version>2.43.1</version>
+			<version>${webdriver.version}</version>
 		</dependency>
+		
+		<!-- proxy browser mob -->
+		<dependency>
+			<groupId>net.lightbody.bmp</groupId>
+			<artifactId>browsermob-proxy</artifactId>
+			<version>${browsermob-proxy.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpclient</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpmime</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpcore</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Appium mobile -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium.version}</version>
+		</dependency>
+
+		<!-- Utils -->
+		<!-- csv parser -->
 		<dependency>
 			<groupId>net.sf.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
-			<version>2.3</version>
+			<version>${opencsv.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
-		</dependency>
+		
+		<!-- jackson & json -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.4.2</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.4.2</version>
+			<version>${jackson.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20140107</version>
-		</dependency>
+		
+		<!-- xstream & xml -->
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
-			<version>1.4.7</version>
+			<version>${xstream.version}</version>
 		</dependency>
+		
+		<!-- data bases -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.33</version>
+			<version>${mysql.connector.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.jolbox</groupId>
 			<artifactId>bonecp</artifactId>
-			<version>0.8.0.RELEASE</version>
+			<version>${bonecp.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
-			<version>1.0.2</version>
+			<version>${persistence.version}</version>
 		</dependency>
+		<!--
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.2</version>
-		</dependency>
+		</dependency>  
+		-->
+		
+		<!-- rest impl. -->
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>2.3.4</version>
+			<version>${rest-assured.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>json-schema-validator</artifactId>
-			<version>2.3.4</version>
+			<version>${rest-assured.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.scribe</groupId>
 			<artifactId>scribe</artifactId>
-			<version>1.3.5</version>
+			<version>${scribe.version}</version>
 		</dependency>
+		
+		<!-- Image recognition & opencv-->
 		<dependency>
 			<groupId>org.sikuli</groupId>
 			<artifactId>sikuli-api</artifactId>
-			<version>1.1.0</version>
+			<version>${sikuli-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${javacpp.version}</version>
+			<classifier>linux-x86</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${javacpp.version}</version>
+			<classifier>linux-x86_64</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${javacpp.version}</version>
+			<classifier>windows-x86</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${javacpp.version}</version>
+			<classifier>windows-x86_64</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${javacpp.version}</version>
+			<classifier>macosx-x86_64</classifier>
+		</dependency>
+		
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -1,7 +1,10 @@
-<suite name="Utils Test Suite" >
-  <test name="Framework Utils Test">
-    <packages>
-      <package name="framework.utils.tests"/>
-    </packages>
-  </test>
+<suite name="Framework Core Utils Unit tests">
+    <parameter name="testType" value="unit"/>	
+	<test name="Framework Utils Unit Test">
+		
+		<packages>
+			<package name="framework.utils.tests"/>
+		</packages>
+		
+	</test>
 </suite>
