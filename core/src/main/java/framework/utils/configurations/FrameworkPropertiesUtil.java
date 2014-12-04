@@ -9,7 +9,8 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
 /**
- * PropertiesUtil assists with reading in properties from multiple properties file using Spring configuration
+ * PropertiesUtil assists with reading in properties from multiple 
+ * properties file using Spring configuration
  *
  */
 public class FrameworkPropertiesUtil extends PropertyPlaceholderConfigurer {
@@ -26,6 +27,11 @@ public class FrameworkPropertiesUtil extends PropertyPlaceholderConfigurer {
         }
     }
 
+    /**
+     * get property by name
+     * @param name	property name
+     * @return	property value
+     */
     public String getProperty(String name) {
         return propertiesMap.get(name);
     }

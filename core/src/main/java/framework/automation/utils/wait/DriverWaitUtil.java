@@ -21,7 +21,7 @@ import framework.utils.log.LogFactory;
 
 /**
  * Utility class to encapsulate different methods that can be used to wait for
- * elements to become visible on the page
+ * elements to become visible on the page, use webdriver
  */
 public class DriverWaitUtil {
 	private static final FrameworkLogger LOG = LogFactory
@@ -32,7 +32,6 @@ public class DriverWaitUtil {
 	private final int DEFAULT_TIME = 60; // in seconds
 	private int timeout;
 	
-
 	public DriverWaitUtil(WebDriver driver) {
 		this.driver = driver;
 		this.timeout = DEFAULT_TIME;
@@ -98,6 +97,11 @@ public class DriverWaitUtil {
 		});
 	}
 
+	/**
+	 * Wait until element is fixed on the screen(stop mooving)
+	 * @param element	web element
+	 * @return	Web Element
+	 */
 	public WebElement forElementToStoppedMoving(final WebElement element) {
 		return fluentWait.until(new Function<WebDriver, WebElement>() {
 			public WebElement apply(WebDriver driver) {

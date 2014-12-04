@@ -11,7 +11,7 @@
 
 	<modules>
 		<module>core</module>
-		<!-- <module>webtests</module> -->
+		<module>webtests</module>
 		<module>mobiletests</module>
 	</modules>
 

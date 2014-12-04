@@ -7,7 +7,8 @@ import framework.utils.log.FrameworkLogger;
 import framework.utils.log.LogFactory;
 
 /**
- * Factory that creates and returns clients to various components
+ * Factory that creates and returns FramewrkPropertiesUtil bean to various components
+ * It reads environment.configuration properties files from classpath
  */
 public class FrameworkComponentsClientFactory {
 	
