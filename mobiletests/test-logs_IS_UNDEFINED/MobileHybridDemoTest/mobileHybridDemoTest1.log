@@ -81,3 +81,43 @@
 18:49:45.208  [main] INFO  f.utils.listeners.HybridMobileDriverListener - Initialized MobileDriver listener
 18:49:45.259  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
 18:49:45.272  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:55:58.419  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileHybridDemoTest1
+18:55:58.422  [main] INFO  mobiletests.demotest.MobileHybridDemoTest - Before Test MobileDriver Demo precondtion
+18:55:59.049  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+18:56:23.178  [main] INFO  framework.automation.utils.wait.WaitUtil - Initialized Wait Utility
+18:56:23.346  [main] INFO  f.utils.listeners.HybridMobileDriverListener - Initializing MobileDriver listener
+18:56:23.346  [main] INFO  f.utils.listeners.HybridMobileDriverListener - Initialized MobileDriver listener
+18:56:23.396  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:56:23.411  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+18:56:56.494  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:56:56.494  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:57:29.644  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:57:29.645  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:58:01.872  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:58:01.872  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:58:34.183  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:58:34.183  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:59:06.320  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:59:06.321  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:59:09.509  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Screenshot path for test: mobileHybridDemoTest1 is: target/test-logs/MobileHybridDemoTest/Screenshots for test failures/mobileHybridDemoTest1_08_12_2014_06_59_09_at_MobileScreen_on_android.png
+18:59:09.823  [main] INFO  f.utils.listeners.ScreenshotFailureTestListener - Successfully wrote MobileScreen screenshot to D:\WorkspaceEclipse\framework.automation\mobiletests\target\test-logs\MobileHybridDemoTest\Screenshots for test failures\mobileHybridDemoTest1_08_12_2014_06_59_09_at_MobileScreen_on_android.png
+18:59:10.125  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+18:59:10.125  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 84565
+18:59:10.131  [main] INFO  mobiletests.demotest.MobileHybridDemoTest - After Test MobileDriver Demo killing driver
+18:59:10.856  [main] INFO  framework.automation.setuptest.TestBase - Post Condition TEAR DOWN for method: mobileHybridDemoTest1
+19:00:04.278  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileHybridDemoTest1
+19:00:04.281  [main] INFO  mobiletests.demotest.MobileHybridDemoTest - Before Test MobileDriver Demo precondtion
+19:00:05.018  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+19:00:28.658  [main] INFO  framework.automation.utils.wait.WaitUtil - Initialized Wait Utility
+19:04:18.296  [main] INFO  framework.automation.setuptest.TestBase - Precondition SETUP for test method: mobileHybridDemoTest1
+19:04:18.299  [main] INFO  mobiletests.demotest.MobileHybridDemoTest - Before Test MobileDriver Demo precondtion
+19:04:19.031  [main] INFO  f.u.c.FrameworkComponentsClientFactory - Prepared Framework Properties Util
+19:04:42.836  [main] INFO  framework.automation.utils.wait.WaitUtil - Initialized Wait Utility
+19:05:02.403  [main] INFO  f.utils.listeners.HybridMobileDriverListener - Initializing MobileDriver listener
+19:05:02.403  [main] INFO  f.utils.listeners.HybridMobileDriverListener - Initialized MobileDriver listener
+19:05:02.441  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+19:05:02.455  [main] INFO  framework.automation.utils.wait.DriverWaitUtil - Initialized Driver Wait Utility
+19:05:05.757  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+19:05:05.757  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 75171
+19:05:09.920  [main] INFO  framework.utils.listeners.TestListenerUtil - Successfully wrote screenshot to byte array output stream
+19:05:09.920  [main] INFO  framework.utils.listeners.TestListenerUtil - Converted image screenshot to byte array. Byte array size is: 79957

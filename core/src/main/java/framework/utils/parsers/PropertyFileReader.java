@@ -8,6 +8,11 @@ import java.util.Properties;
 import framework.utils.log.FrameworkLogger;
 import framework.utils.log.LogFactory;
 
+/**
+ * Class to read property files
+ * @author Taras.Lytvyn
+ *
+ */
 public class PropertyFileReader extends FileReader {
 	
 	private static final FrameworkLogger LOG = LogFactory.getLogger(PropertyFileReader.class); 
@@ -26,6 +31,12 @@ public class PropertyFileReader extends FileReader {
 		closeStream();
 	}
 
+	/**
+	 * get property value
+	 * @param propertyName	name of the property
+	 * @return property value
+	 * @throws Exception
+	 */
 	public String getPropertyValue(String propertyName) throws Exception {
 		if (!props.isEmpty() && propertyName != null) {
 			LOG.info("Reading property with property name: " + propertyName);
@@ -34,6 +45,11 @@ public class PropertyFileReader extends FileReader {
 			throw new Exception("Property file is empty or property " + propertyName + " is invalid property to get");
 	}
 
+	/**
+	 * read properties to map
+	 * @return	map of properties
+	 * @throws Exception
+	 */
 	public Map<String, String> readPropertiesToMap() throws Exception {
 		Map<String, String> propsMap = new HashMap<String, String>();
 		for (String key : props.stringPropertyNames()) {

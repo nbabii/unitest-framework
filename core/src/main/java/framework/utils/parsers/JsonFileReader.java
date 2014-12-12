@@ -17,6 +17,12 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 
 import framework.utils.dto.IFrameworkDTO;
 
+/**
+ * Json file reader for framework
+ * 
+ * @author Taras.Lytvyn
+ *
+ */
 public class JsonFileReader extends FileReader {
 
 	private ObjectMapper objectMapper;
@@ -42,6 +48,9 @@ public class JsonFileReader extends FileReader {
 		setObjectMapper();
 	}
 
+	/**
+	 * set properties of onject mapper for json parser
+	 */
 	private void setObjectMapper() {
 		MappingJsonFactory jsonFactory = new MappingJsonFactory();
 		jsonFactory.enable(Feature.ALLOW_COMMENTS);
@@ -50,6 +59,16 @@ public class JsonFileReader extends FileReader {
 		objectMapper = new ObjectMapper(jsonFactory);
 	}
 
+	// TODO bad casting behavior here. If we have single property we are casting
+	// to String, if we have same property in several places in json file we use
+	// casting to List<JsonNode>
+	/**
+	 * read json file from input stream and get single property from json
+	 * 
+	 * @param property	property to read
+	 * @return	read object
+	 * @throws Exception
+	 */
 	public Object readJsonFileSingleProperty(String property) throws Exception {
 		try {
 			rootNode = objectMapper.readTree(parsedInput);
@@ -63,6 +82,13 @@ public class JsonFileReader extends FileReader {
 		return readJsonSingleProperty(property);
 	}
 
+	/**
+	 * get single property from json response
+	 * @param property	property
+	 * @param jsonResponse	json response
+	 * @return	parsed property
+	 * @throws Exception
+	 */
 	public Object readJsonResponseSingleProperty(String property,
 			String jsonResponse) throws Exception {
 		try {
@@ -77,6 +103,12 @@ public class JsonFileReader extends FileReader {
 		return readJsonSingleProperty(property);
 	}
 
+	/**
+	 * get json single property from json 
+	 * @param property json property
+	 * @return	property value
+	 * @throws Exception
+	 */
 	private Object readJsonSingleProperty(String property) throws Exception {
 		List<JsonNode> jsonNodesFound = rootNode.findValues(property);
 		if (jsonNodesFound.size() > 1) {
@@ -122,15 +154,32 @@ public class JsonFileReader extends FileReader {
 		}
 	}
 
+	/**
+	 * read json to object from input stream
+	 * @param clazz	class to parse
+	 * @return	parsed object
+	 */
 	public <T extends IFrameworkDTO> T readJsonToObjectFromFile(Class<T> clazz) {
 		return readJsonToObject(clazz, parsedInput);
 	}
 
+	/**
+	 * read json from response (just wrapper for readJsonToObject with better name)
+	 * @param clazz
+	 * @param response
+	 * @return
+	 */
 	public <T extends IFrameworkDTO> T readJsonToObjectFromResponse(
 			Class<T> clazz, String response) {
 		return readJsonToObject(clazz, response);
 	}
 
+	/**
+	 * read json to Object
+	 * @param clazz		class to parse
+	 * @param input		string json input
+	 * @return	parsed object
+	 */
 	private <T extends IFrameworkDTO> T readJsonToObject(Class<T> clazz,
 			String input) {
 		T parsedDTOList = null;

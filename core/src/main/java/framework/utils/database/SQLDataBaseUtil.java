@@ -5,8 +5,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * SQL DB Util class
+ * @author Taras.Lytvyn
+ *
+ */
 public class SQLDataBaseUtil {
 
+	/**
+	 * close connection
+	 * @param connection
+	 */
 	public static void close(Connection connection) {
 		if (connection != null) {
 			try {
@@ -17,6 +26,10 @@ public class SQLDataBaseUtil {
 		}
 	}
 
+	/**
+	 * close statement
+	 * @param statement
+	 */
 	public static void close(Statement statement) {
 		if (statement != null) {
 			try {
@@ -27,6 +40,10 @@ public class SQLDataBaseUtil {
 		}
 	}
 
+	/**
+	 * close the result set
+	 * @param resultSet
+	 */
 	public static void close(ResultSet resultSet) {
 		if (resultSet != null) {
 			try {

@@ -9,6 +9,11 @@ import java.util.Map;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
 
+/**
+ * HTTP client utility class
+ * @author Taras.Lytvyn
+ *
+ */
 public class HttpClient {
 
 	private String baseUri;
@@ -59,6 +64,13 @@ public class HttpClient {
 		return getBaseUri() + ":" + getBasePort() + getBasePath();
 	}
 
+	/**
+	 * perform base auth with client
+	 * @param userName	username
+	 * @param password  password
+	 * @param authUrl   auth url
+	 * @return client
+	 */
 	@SuppressWarnings("unused")
 	private HttpClient baseAuth(String userName, String password, String authUrl) {
 		try {
@@ -70,6 +82,13 @@ public class HttpClient {
 		return this;
 	}
 
+	/**
+	 * perform base auth on form
+	 * @param userName	username	
+	 * @param password	password
+	 * @param authUrl	auth url
+	 * @return	client
+	 */
 	@SuppressWarnings("unused")
 	private HttpClient baseAuthOnForm(String userName, String password, String authUrl) {
 		try {
@@ -81,6 +100,13 @@ public class HttpClient {
 		return this;
 	}
 
+	/**
+	 * auth with ssl
+	 * @param certURL  cert url
+	 * @param password	password
+	 * @param authUrl	auth url
+	 * @return	client
+	 */
 	@SuppressWarnings("unused")
 	private HttpClient baseAuthWithSSLCertificate(String certURL,
 			String password, String authUrl) {
@@ -93,6 +119,12 @@ public class HttpClient {
 		return this;
 	}
 
+	/**
+	 * oauth2 auth
+	 * @param accessToken	token
+	 * @param authUrl	auth url	
+	 * @return	client
+	 */
 	@SuppressWarnings("unused")
 	private HttpClient oauthAuth2(String accessToken, String authUrl) {
 		try {
@@ -104,6 +136,11 @@ public class HttpClient {
 		return this;
 	}
 
+	/**
+	 * perform get request
+	 * @param endPointUrl	resource endpoint
+	 * @return	response
+	 */
 	public Response callHttpGet(String endPointUrl) {
 		Response response = null;
 		try {
@@ -115,6 +152,12 @@ public class HttpClient {
 		return response;
 	}
 
+	/**
+	 * perform get request with parameters
+	 * @param endPointUrl	resource endpoint
+	 * @param params	parameters
+	 * @return	response
+	 */
 	public Response callHttpGet(String endPointUrl, Map<String, String> params) {
 		Response response = null;
 		try {
@@ -126,6 +169,12 @@ public class HttpClient {
 		return response;
 	}
 
+	/**
+	 * perform post request
+	 * @param endPointUrl	resource endpoint
+	 * @param requestBody	request body
+	 * @return	response
+	 */
 	public Response callHttpPost(String endPointUrl, String requestBody) {
 		Response response = null;
 		try {
@@ -137,6 +186,12 @@ public class HttpClient {
 		return response;
 	}
 
+	/**
+	 * perform put request
+	 * @param endPointUrl	resource endpoint
+	 * @param requestBody	request body
+	 * @return	response
+	 */
 	public Response callHttpPut(String endPointUrl, String requestBody) {
 		Response response = null;
 		try {
@@ -148,6 +203,12 @@ public class HttpClient {
 		return response;
 	}
 
+	/**
+	 * perform delete request
+	 * @param endPointUrl	resource endpoint
+	 * @param requestBody	request body
+	 * @return	response
+	 */
 	public Response callHttpDelete(String endPointUrl, String requestBody) {
 		Response response = null;
 		try {

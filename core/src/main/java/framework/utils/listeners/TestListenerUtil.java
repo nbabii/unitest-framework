@@ -16,6 +16,11 @@ import ru.yandex.qatools.allure.annotations.Attachment;
 import framework.utils.log.FrameworkLogger;
 import framework.utils.log.LogFactory;
 
+/**
+ * Utility class with helper methods for listeners
+ * @author Taras.Lytvyn
+ *
+ */
 public class TestListenerUtil {
 
 	private static final FrameworkLogger LOG = LogFactory
@@ -23,6 +28,11 @@ public class TestListenerUtil {
 
 	private final static String LOG_FILE_EXTENSION = "log";
 
+	/**
+	 * get full test name
+	 * @param result	result
+	 * @return	full test name
+	 */
 	static String getFullTestName(ITestResult result) {
 		String testName = result.getTestClass().getRealClass().getName() + "."
 				+ getTestName(result);
@@ -32,16 +42,27 @@ public class TestListenerUtil {
 
 		return testName;
 	}
-	
+
+	/**
+	 * get test name
+	 * @param result	result
+	 * @return	test name
+	 */
 	static String getTestName(ITestResult result) {
 		String testName = result.getMethod().getMethodName();
 		return testName;
 	}
 
-	@Attachment(value = "Test log during execution for \"{1}\"", type="text/plain")
+	/**
+	 * attach log execution file to test allure report
+	 * @param testClassName	test class name
+	 * @param testName	test method name
+	 * @return	String content to attach
+	 */
+	@Attachment(value = "Test log during execution for \"{1}\"", type = "text/plain")
 	static String attachLogToReporter(String testClassName, String testName) {
 		String currentLogTextPath = System.getProperty("test-logs") + "/"
-				+ testClassName + "/" + testName + "." + LOG_FILE_EXTENSION;
+				+ testClassName + "/" + System.getProperty("currentTestName") + "." + LOG_FILE_EXTENSION;
 		String stringFileContentToAttach = null;
 		Path currentLogPath = Paths.get(currentLogTextPath);
 		if (Files.exists(currentLogPath)) {
@@ -64,9 +85,15 @@ public class TestListenerUtil {
 		}
 		return stringFileContentToAttach;
 	}
-	
+
+	/**
+	 * get byte array from Buffered image
+	 * @param image	buffered image
+	 * @param format	image format
+	 * @return	byte array from image
+	 */
 	static byte[] getByteArrayFromImage(BufferedImage image, String format) {
-		//saveFileToLog(image, testName, screenshotType);
+		// saveFileToLog(image, testName, screenshotType);
 		LOG.debug("Converting screenshot to byte array for report attachment");
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		try {

@@ -7,6 +7,11 @@ import com.jolbox.bonecp.BoneCPConfig;
 
 import framework.utils.parsers.PropertyFileReader;
 
+/**
+ * SQL DB connector
+ * @author Taras.Lytvyn
+ *
+ */
 public class SQLDataBaseConnector {
 	private static PropertyFileReader propertiesReader = new PropertyFileReader(
 			"/mysql-database.properties");
@@ -17,14 +22,26 @@ public class SQLDataBaseConnector {
 	private SQLDataBaseConnector() {
 	};
 
+	/**
+	 * BONECP connection pool
+	 * @return connection pool instance
+	 */
 	public static BoneCP getConnectionPool() {
 		return connectionPool;
 	}
 
+	/**
+	 * set the connection pool
+	 * @param connectionPool
+	 */
 	public static void setConnectionPool(BoneCP connectionPool) {
 		SQLDataBaseConnector.connectionPool = connectionPool;
 	}
 
+	/**
+	 * Get the new connection instance
+	 * @return
+	 */
 	public static Connection getConnection() {
 		Connection conn = null;
 		try {
@@ -38,6 +55,9 @@ public class SQLDataBaseConnector {
 		return conn;
 	}
 
+	/**
+	 * set connection properties
+	 */
 	public static void setConnectionProperties() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -66,6 +86,9 @@ public class SQLDataBaseConnector {
 		}
 	}
 
+	/**
+	 * shuts down the connection pool
+	 */
 	public static void shutdownConnPool() {
 		try {
 			BoneCP connectionPool = SQLDataBaseConnector.getConnectionPool();

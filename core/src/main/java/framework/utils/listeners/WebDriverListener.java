@@ -11,6 +11,11 @@ import framework.utils.log.FrameworkLogger;
 import framework.utils.log.LogFactory;
 import ru.yandex.qatools.allure.annotations.Step;
 
+/**
+ * This class represent the webdriver listener for eventfoiring events
+ * @author Taras.Lytvyn
+ *
+ */
 public class WebDriverListener implements WebDriverEventListener {
 
 	private static final FrameworkLogger LOG = LogFactory

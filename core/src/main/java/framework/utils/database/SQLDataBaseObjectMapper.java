@@ -24,6 +24,13 @@ public class SQLDataBaseObjectMapper<T> {
 		}
 	}
 
+	/**
+	 * maps SQL query result set to List of Java Objects
+	 * @param resultSet	sql result set
+	 * @param clazz class for mapping
+	 * @return	List of mapped objects of passed class
+	 * @throws Exception
+	 */
 	public List<T> sqlQueryResultToList(ResultSet resultSet, Class<T> clazz)
 			throws Exception {
 		List<T> parsedObjects = new ArrayList<T>();
@@ -67,6 +74,6 @@ public class SQLDataBaseObjectMapper<T> {
 			return parsedObjects;
 
 		} else
-			throw new Exception("result set is null");
+			throw new RuntimeException("result set is null");
 	}
 }

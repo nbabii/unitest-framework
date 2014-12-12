@@ -5,6 +5,11 @@ import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
 
+/**
+ * abstract class for all readers
+ * @author Taras.Lytvyn
+ *
+ */
 public abstract class FileReader {
 
 	protected InputStream input;
@@ -22,6 +27,9 @@ public abstract class FileReader {
 		}
 	}
 
+	/**
+	 * close input stream
+	 */
 	protected void closeStream() {
 		try {
 			input.close();
@@ -30,6 +38,12 @@ public abstract class FileReader {
 		}
 	}
 
+	/**
+	 * gets String from inputstream
+	 * @param is	input stream
+	 * @return	string represantation of input stream
+	 * @throws IOException
+	 */
 	public static String getStringFromInputStream(InputStream is)
 			throws IOException {
 		String inputStreamString = IOUtils.toString(is);

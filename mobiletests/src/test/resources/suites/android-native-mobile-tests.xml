@@ -2,7 +2,7 @@
     <parameter name="testType" value="mobile"/>
     <parameter name="osType" value="android"/>	
     <parameter name="appType" value="native"/>
-     <parameter name="mobileDeviceName" value="4d0060f2b0226077"/>
+     <parameter name="mobileDeviceName" value="08a5eb52255d5241"/>
 	<test name="Mobile Native Demo Test 1">	
 		<classes>
 		    <class name="mobiletests.demotest.MobileNativeDemoTest"/>

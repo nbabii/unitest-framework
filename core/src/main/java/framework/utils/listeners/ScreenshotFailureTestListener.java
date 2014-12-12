@@ -13,10 +13,7 @@ import java.util.Calendar;
 
 import javax.imageio.ImageIO;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.Augmenter;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
@@ -87,15 +84,7 @@ public class ScreenshotFailureTestListener extends TestListenerAdapter {
 		} catch (InterruptedException e1) {
 			LOG.error(e1.getMessage());
 		}
-		File imageFile = ((TakesScreenshot) driver)
-				.getScreenshotAs(OutputType.FILE);
-		try {
-			image = ImageIO.read(imageFile);
-		} catch (IOException e) {
-			LOG.error(
-					"Cannot read browser screenshot created file and convert it to Buffered Image object for test: "
-							+ currentTestName, e);
-		}
+		image = AutomationDriverListenerUtil.takeWebBrowserScreenshot(driver);
 		saveScreenshotFileToLog(image, currentTestName,
 				ScreenShot.BrowserScreen.name(), WebBrowser.getSetWebBrowser());
 
@@ -109,8 +98,6 @@ public class ScreenshotFailureTestListener extends TestListenerAdapter {
 		BufferedImage image = null;
 		LOG.debug("Writing out mobile screenshot on {} test failure",
 				currentTestName);
-		WebDriver augmentedDriver = new Augmenter().augment(MobileDriverFactory
-				.getCreatedAppiumDriver());
 		try {
 			// we add this, because sometimes webdriver takes screenshots little
 			// bit earlier then needed
@@ -118,15 +105,9 @@ public class ScreenshotFailureTestListener extends TestListenerAdapter {
 		} catch (InterruptedException e1) {
 			LOG.error(e1.getMessage());
 		}
-		File imageFile = ((TakesScreenshot) augmentedDriver)
-				.getScreenshotAs(OutputType.FILE);
-		try {
-			image = ImageIO.read(imageFile);
-		} catch (IOException e) {
-			LOG.error(
-					"Cannot read mobile screenshot created file and convert it to Buffered Image object for test: "
-							+ currentTestName, e);
-		}
+		image = AutomationDriverListenerUtil.takeWebBrowserScreenshot(MobileDriverFactory
+				.getCreatedAppiumDriver());
+		
 		saveScreenshotFileToLog(image, currentTestName,
 				ScreenShot.MobileScreen.name(),
 				MobilePlatform.getSetMobilePlatform());

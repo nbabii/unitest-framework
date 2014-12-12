@@ -81,7 +81,7 @@ public class AutomationDriverListenerUtil {
 				element.toString().length() - 1);
 	}
 
-	private static BufferedImage takeWebBrowserScreenshot(WebDriver driver) {
+	static BufferedImage takeWebBrowserScreenshot(WebDriver driver) {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e1) {

@@ -18,26 +18,30 @@ public class LogToReporterAttacherListener extends TestListenerAdapter {
 
 	@Override
 	public void onTestSuccess(ITestResult tr) {
-		TestListenerUtil.attachLogToReporter(System
-				.getProperty("logTestFolder"), tr.getMethod().getMethodName());
+		TestListenerUtil.attachLogToReporter(
+				System.getProperty("logTestFolder"),
+				TestListenerUtil.getFullTestName(tr));
 	}
 
 	@Override
 	public void onTestFailure(ITestResult tr) {
-		TestListenerUtil.attachLogToReporter(System
-				.getProperty("logTestFolder"), tr.getMethod().getMethodName());
+		TestListenerUtil.attachLogToReporter(
+				System.getProperty("logTestFolder"),
+				TestListenerUtil.getFullTestName(tr));
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult tr) {
-		TestListenerUtil.attachLogToReporter(System
-				.getProperty("logTestFolder"), tr.getMethod().getMethodName());
+		TestListenerUtil.attachLogToReporter(
+				System.getProperty("logTestFolder"),
+				TestListenerUtil.getFullTestName(tr));
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult tr) {
-		TestListenerUtil.attachLogToReporter(System
-				.getProperty("logTestFolder"), tr.getMethod().getMethodName());
+		TestListenerUtil.attachLogToReporter(
+				System.getProperty("logTestFolder"),
+				TestListenerUtil.getFullTestName(tr));
 	}
-	
+
 }

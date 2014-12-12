@@ -44,7 +44,6 @@ public class TestStatusListener implements IInvokedMethodListener {
 		}
 
 		if (isTestMethod) {
-			ITestNGMethod testMethod = method.getTestMethod();
 			String status = "INVALID";
 			// only if we have a test method, we should print out the status
 			synchronized (TestStatusListener.class) {
@@ -62,9 +61,8 @@ public class TestStatusListener implements IInvokedMethodListener {
 				LOG.info("::::::::::::::::::::::::::::::::::::::::::::");
 				LOG.info("Finished executing the Test Method: "
 						+ TestListenerUtil.getTestName(result));
-				LOG.info("Test: {}.{} status: {}",
-						new Object[] { TestListenerUtil.getTestName(result),
-								testMethod.getMethodName(), status });
+				LOG.info("Test: {} - status: {}",
+						new Object[] { TestListenerUtil.getTestName(result), status });
 				LOG.info("::::::::::::::::::::::::::::::::::::::::::::");
 			}
 		}

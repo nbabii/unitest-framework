@@ -14,6 +14,11 @@ import au.com.bytecode.opencsv.CSVReader;
 import au.com.bytecode.opencsv.bean.CsvToBean;
 import au.com.bytecode.opencsv.bean.HeaderColumnNameTranslateMappingStrategy;
 
+/**
+ * CSV file reader for framework
+ * @author Taras.Lytvyn
+ *
+ */
 public class CSVFileReader extends FileReader {
 
 	private CSVReader csvReader;
@@ -30,6 +35,11 @@ public class CSVFileReader extends FileReader {
 		closeStream();
 	}
 
+	/**
+	 * parse csv file to object
+	 * @param clazz	class to parse in
+	 * @return parsed object
+	 */
 	public <T extends IFrameworkDTO> List<T> getObjectFromCSV(Class<T> clazz) {
 		csvReader = new CSVReader(new StringReader(parsedInput));
 		HeaderColumnNameTranslateMappingStrategy<T> beanStrategy = new HeaderColumnNameTranslateMappingStrategy<T>();
@@ -47,6 +57,10 @@ public class CSVFileReader extends FileReader {
 		return parsedObjects;
 	}
 
+	/**
+	 * gets List of Maps from csv file
+	 * @return list of maps of csv file
+	 */
 	public List<Map<String, String>> getListOfMapsFromCSV() {
 		csvReader = new CSVReader(new StringReader(parsedInput));
 		List<Map<String, String>> resultParsedList = new ArrayList<Map<String, String>>();

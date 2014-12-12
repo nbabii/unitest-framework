@@ -30,7 +30,7 @@
 				<configuration>
 					<!-- <skip>false</skip>  -->
 					<suiteXmlFiles> 
-						<suiteXmlFile>${test-suites-folder}/android-hybrid-mobile-tests.xml</suiteXmlFile>
+						<!--<suiteXmlFile>${test-suites-folder}/android-hybrid-mobile-tests.xml</suiteXmlFile>-->
 						<suiteXmlFile>${test-suites-folder}/android-native-mobile-tests.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>

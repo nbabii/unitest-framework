@@ -50,6 +50,7 @@ public class MobileDriverFactory extends AutomationDriver{
 			if (osType.equals(MobileOsType.ANDROID)) {
 				desiredCaps.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
 				desiredCaps.setCapability(MobileCapabilityType.DEVICE_NAME, mobilePlatform.getMobileDeviceName());
+				
 				if (appType.equals(MobileAppType.NATIVE)){
 					
 					desiredCaps.setCapability(MobileCapabilityType.APP, propertiesUtil.getProperty("application.path"));
@@ -121,7 +122,7 @@ public class MobileDriverFactory extends AutomationDriver{
 	/**
 	 * Switch to mobile web view if such view has appeared
 	 * @param driver	mobile driver 
-	 * @param webViewAppearanceTimeout	timeout - maximum time for webview appearence waiting
+	 * @param webViewAppearanceTimeout	timeout - maximum time for webview appearance waiting
 	 * @throws InterruptedException
 	 */
 	private static void switchtoWebView(final AppiumDriver driver, int webViewAppearanceTimeout) throws InterruptedException{
@@ -134,6 +135,11 @@ public class MobileDriverFactory extends AutomationDriver{
 				return contextQuantity == 2;
 			}
 		});
-    	driver.context((String)driver.getContextHandles().toArray()[1]);
+		for (String context : driver.getContextHandles()){
+			if (context.toLowerCase().contains("web")){
+				driver.context(context);
+				break;
+			}
+		}
 	}
 }

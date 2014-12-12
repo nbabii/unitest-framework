@@ -10,6 +10,11 @@ import java.util.Map;
 
 import framework.utils.dto.IFrameworkDTO;
 
+/**
+ * SQL DAO layer for framework sql connector
+ * @author Taras.Lytvyn
+ *
+ */
 public class SQLDatabaseClient implements IDatabaseDao {
 
 	@Override
@@ -37,6 +42,7 @@ public class SQLDatabaseClient implements IDatabaseDao {
 		return parsedList;
 	}
 
+	@Override
 	public Map<String, String> getMapFromResultSet(int rowId,
 			String queryExpression) {
 		Map<String, String> resultMap = new HashMap<String, String>();
@@ -69,6 +75,10 @@ public class SQLDatabaseClient implements IDatabaseDao {
 		return resultMap;
 	}
 
+	/**
+	 * creates statement for SQL connection
+	 * @return statement instance
+	 */
 	private Statement createStatement() {
 		Statement stmt = null;
 		try {

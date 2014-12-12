@@ -19,7 +19,11 @@ import framework.automation.driver.web.ProxyServerForBrowser;
 import framework.automation.driver.web.WebBrowser;
 import framework.utils.log.FrameworkLogger;
 import framework.utils.log.LogFactory;
-
+/**
+ * Listener Class for capturing proxy
+ * @author Taras.Lytvyn
+ *
+ */
 //attachment is not working yet
 //https://code.google.com/p/harviewer/issues/detail?id=101&thanks=101&ts=1416586702
 public class ProxyCapturerListener extends TestListenerAdapter {
@@ -31,14 +35,26 @@ public class ProxyCapturerListener extends TestListenerAdapter {
 	private final String PROXY_HAR_FOLDER_NAME = "Proxy HAR";
 	private final String HAR_FILE_FORMAT = "har";
 
+	/**
+	 * Create and attach HAR to test with proxy
+	 * @param result	test result
+	 * @return	har
+	 * @throws IOException
+	 */
 	@Attachment(value = "HAR got during test execution")
 	private String createHAR(ITestResult result) throws IOException {
-		String currentTestName = TestListenerUtil.getTestName(result);
 		return "Check har here: http://www.softwareishard.com/har/viewer/" + "\n\n"  
-				+ saveHarFileToLog(currentTestName,
+				+ saveHarFileToLog(TestListenerUtil.getTestName(result),
 						WebBrowser.getSetWebBrowser());
 	}
 
+	/**
+	 * save har file to log
+	 * @param testName	tet name
+	 * @param environment	execution environment
+	 * @return	har content
+	 * @throws IOException
+	 */
 	private String saveHarFileToLog(String testName,
 			ExecutionEnvironment environment) throws IOException {
 		String harNamePath = harNamePath(testName, environment);
